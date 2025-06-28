@@ -92,8 +92,8 @@ jobs:
       run: |
         cd openwrt
         make download -j8
-    # - name: Setup tmate session
-    #   uses: csexton/debugger-action@master
+    - name: Setup tmate session
+      uses: csexton/debugger-action@master
 
     - name: 开始编译固件
       id: compile
